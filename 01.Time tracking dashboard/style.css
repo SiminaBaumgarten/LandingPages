@@ -1,0 +1,174 @@
+
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	font-family: 'Rubik',sans-serif;
+	align-content: center;
+}
+
+.main-container {
+	display: flex;
+	gap: 10px;
+	width: 1200px;
+	margin-top: 100px;
+}
+
+.left-container {
+	flex: 25%;
+	background-color: #1c1f4a;
+	border-radius: 10px;
+	color: white;
+	
+}
+.left-container-top {
+	height: 66%;
+	background-color: #5847eb;
+	border-radius: 10px;
+	display: flex;
+	position: relative;
+	
+}
+.portrait-container {
+	position: relative;
+}
+
+#portrait {
+	position: absolute;
+	height: 5em;
+	border-radius: 50%;
+	left: 30px;
+	top: 30px;
+	
+
+}
+.user-name-container {
+	position: absolute;
+	bottom: 60px;
+	left: 30px;
+}
+.left-container-bottom {
+	display: flex;
+	justify-content: space-around; 
+	flex-direction: column;
+	padding: 30px;
+	
+}
+.right-container {
+	flex: 75%;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.up-right-container {
+	display:flex;
+	justify-content: space-evenly;
+	gap: 10px;
+	
+}
+.down-right-container {
+	display:flex;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+.card {
+	flex: 33%;
+	display:flex;
+	/*align-items: flex-end;*/
+	align-items: flex-end;
+	background-color: green;
+	height: 300px;
+	border-radius: 10px;
+	position: relative;
+}
+.mini-card {
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	background-color: #1c1f4a;
+	color: white;
+	gap: 10px;
+	cursor: pointer;
+	height: 85%;
+	width: 100%;
+	border-radius: 10px;
+	z-index: 0;
+	
+}
+.activities {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.work {
+	background-color: #ff8b64;
+}
+.play {
+	background-color: #55c2e6;
+}
+.study {
+	background-color: #ff5e7d;
+}
+.exercise {
+	background-color: #4bcf82;
+}
+.social {
+	background-color: #7335d2;
+}
+.self-care {
+	background-color: #f1c75b;
+} 
+img {
+	
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+.fas {
+	padding-top: 10px;
+}
+
+.hours {
+	font-size: 300%;
+	font-weight: normal;
+	padding-bottom: 20px;
+}
+
+.past {
+	padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+	.main-container, .up-right-container, .down-right-container {
+		flex-direction: column;
+	}
+	.user-name-container {
+    bottom: 8px;
+    left: 150px;
+	}
+}
+
+
+
+
+
+$blue: #5847eb;
+
+$lightredWork: #ff8b64; //(work):
+$softblue: #55c2e6; //(play):
+$lightredStudy: #ff5e7d; //(study):
+$limegreen: #4bcf82; //(exercise):
+$violet: #7335d2; //(social):
+$softorange: #f1c75b; //(self care):
+
+$verydarkBlue: #0e1323;
+$darkblue: #1c1f4a;
+$desaturatedBlue: #6f76c8;
+$paleblue: #bdc1ff;
